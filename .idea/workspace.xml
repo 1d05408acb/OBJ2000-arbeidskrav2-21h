@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14aa7d87-1018-48a6-a1dd-f6c9cbe501fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,5 +131,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
