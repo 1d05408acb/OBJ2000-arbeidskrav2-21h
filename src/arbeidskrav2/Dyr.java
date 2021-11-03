@@ -4,30 +4,30 @@ import java.text.Collator;
 import java.util.ArrayList;
 
 public class Dyr {
-    private String id;
-    private char kjonn;
-    private double lengde;
-    private double vekt;
-    private String sted;
-    private String dato;
-    private ArrayList<Gjenfangst> listeGjenfangst = new ArrayList<Gjenfangst>();
+    private String idn;
+    private String kjonnet;
+    private double lengden;
+    private double vekten;
+    private String stedet;
+    private String datoen;
+    public ArrayList<Gjenfangst> listeGjenfangst = new ArrayList<Gjenfangst>();
     private final static Collator Kollator = Collator.getInstance();
 
-    public Dyr(String i, char k, double l, double v, String s, String d) {
-        id = i;
-        kjonn = k;
-        lengde = l;
-        vekt = v;
-        sted = s;
-        dato = d;
+    public Dyr(String id, String kjonn, double lengde, double vekt, String sted, String dato) {
+        idn = id;
+        kjonnet = kjonn;
+        lengden = lengde;
+        vekten = vekt;
+        this.stedet = sted;
+        datoen = dato;
     }
 
-    public int compareto(Dyr dyr) {
-        return Kollator.compare(this.id, dyr.id);
+    public int compareTo(Dyr dyr) {
+        return Kollator.compare(this.idn, dyr.idn);
     }
 
     public boolean equals(Dyr dyr) {
-        return Kollator.equals(this.id, dyr.id);
+        return Kollator.equals(this.idn, dyr.idn);
     }
 
     public ArrayList<Gjenfangst> hentFangst() {
@@ -35,25 +35,25 @@ public class Dyr {
     }
 
     public String hentId() {
-        return id;
+        return idn;
     }
 
     public double hentLengde() {
-        return lengde;
+        return lengden;
     }
     public double hentVekt() {
-        return vekt;
+        return vekten;
     }
 
     public String hentSted() {
-        return sted;
+        return stedet;
     }
 
     public String hentDato() {
-        return dato;
+        return datoen;
     }
 
-    public void regGjenfangst(Gjenfangst g) {
+    public void registrerGjenfangst(Gjenfangst g) {
         listeGjenfangst.add(g);
     }
 
@@ -62,11 +62,13 @@ public class Dyr {
     }
 
     public String toString() {
-        return "ID: " + id + "\n" +
-                "Kjønn: " + kjonn + "\n" +
-                "Lengde: " + lengde + "\n" +
-                "Vekt: " + vekt + "\n" +
-                "Fangested: " + sted + "\n" +
-                "Dato: " + dato;
+        return "ID: " + idn + "\n" +
+                "Kjønn: " + kjonnet + "\n" +
+                "Lengde: " + lengden + "cm" + "\n" +
+                "Vekt: " + vekten + "kg" + "\n" +
+                "Fangested: " + stedet + "\n" +
+                "Dato: " + datoen;
     }
 }
+
+

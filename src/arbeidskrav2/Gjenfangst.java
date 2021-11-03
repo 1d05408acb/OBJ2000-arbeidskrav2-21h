@@ -1,39 +1,42 @@
 package arbeidskrav2;
 
 public class Gjenfangst {
-    private String dato;
-    private String sted;
-    private double lengde;
-    private double vekt;
+    private String datoen;
+    private String stedet;
+    private double lengden;
+    private double vekten;
+    double lengdeOre;
 
-    public Gjenfangst(String d, String s, double l, double v) {
-        dato = d;
-        sted = s;
-        lengde = l;
-        vekt = v;
+    public Gjenfangst(String dato, String sted, double lengde, double vekt, double farge) {
+        datoen = dato;
+        stedet = sted;
+        lengden = lengde;
+        vekten = vekt;
+    }
+
+    public Gjenfangst(String dato, String sted, double lengde, double vekt) {
     }
 
     public String hentDato() {
-        return dato;
+        return datoen;
     }
 
     public String hentSted() {
-        return sted;
+        return stedet;
     }
 
     public double hentLengde() {
-        return lengde;
+        return lengden;
     }
 
     public double hentVekt() {
-        return vekt;
+        return vekten;
     }
 
     public String toString() {
-        return "Dato for gjenfangst: " + dato + "\n" +
-                "Sted: " + sted + "\n" +
-                "Lengde: " + lengde + "\n" +
-                "Vekt: " + vekt;
+        return "Dato for gjenfangst: " + datoen + "\n" +
+                "Sted: " + stedet + "\n" +
+                "Lengde: " + lengden + "\n" +
+                "Vekt: " + vekten;
     }
-
 }
