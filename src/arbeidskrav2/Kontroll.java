@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Kontroll {
     // Opprette en array liste
-    ArrayList<Dyr> liste = new ArrayList<Dyr>();
+    ArrayList<Dyr> listeDyr = new ArrayList<Dyr>();
     // Opprette variabler for å kunne telle
     private int antallGauper = 0;
     private int antallHarer = 0;
@@ -14,7 +14,6 @@ public class Kontroll {
         String id = "G" + antallGauper;
         id.trim(); // Fjerner mellomrom mellom string og int
         Gaupe nyGaupe = new Gaupe(id, kjonn, lengde, vekt, sted, dato, lengdeOre);
-        liste.add(nyGaupe);
+        listeDyr.add(nyGaupe);
     }
-
 }
