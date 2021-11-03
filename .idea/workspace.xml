@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14aa7d87-1018-48a6-a1dd-f6c9cbe501fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstGaupe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Hare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../../../../../Program Files/Eclipse Foundation/jdk-16.0.2.7-hotspot/lib/src.zip!/java.base/java/lang/Object.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="20HhrQXTxIYYCVrS0EDbU0A8x7Z" />
   <component name="ProjectLevelVcsManager">
@@ -90,6 +100,9 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Gamle filer/Obligatorisk oppgave del 2 høsten 2019/Obligatorisk oppgave del 2 høsten 2019" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
