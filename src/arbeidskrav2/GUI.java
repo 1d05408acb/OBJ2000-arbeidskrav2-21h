@@ -29,6 +29,7 @@ public class GUI {
                 ALTERNATIVER[0]);
         return valg;
     }
+
     // Kode for å aktivere ulike funksjoner ved valg av knapper
     public void program() {
         boolean fortsette = true;
@@ -46,12 +47,16 @@ public class GUI {
                     break;
                 case 3:
                     registrerGjennfangstHare();
+                    break;
                 case 4:
                     finnDyr();
+                    break;
                 case 5:
                     listDyr();
+                    break;
                 case 6:
                     listDyrMedGjenfangst();
+                    break;
                 default:
                     fortsette = false;
             }
@@ -77,7 +82,8 @@ public class GUI {
         String type = JOptionPane.showInputDialog("Haren's type (vanlig hare/sørhare): ");
         char type_formatert = type.charAt(0);
         String farge = JOptionPane.showInputDialog("Haren's farge (hvit/brun): ");
-        kontroll.registrerHare(kjonn, lengde, vekt, sted, dato, type_formatert, farge);
+        char farge_formatert = farge.charAt(0);
+        kontroll.registrerHare(kjonn, lengde, vekt, sted, dato, type_formatert, farge_formatert);
     }
 
     public void registrerGjennfangstGaupe() {
@@ -96,8 +102,9 @@ public class GUI {
         double vekt = Double.parseDouble(JOptionPane.showInputDialog("Haren's vekt i kg: "));
         String sted = JOptionPane.showInputDialog("Sted gjenfanget: ");
         String dato = JOptionPane.showInputDialog("Dato gjenfanget (dd.mm.yyyy): ");
-        double farge = Double.parseDouble(JOptionPane.showInputDialog("Haren's farge (hvit/brun): "));
-        kontroll.registrerGjennfangstHare(id, dato, sted, lengde, vekt, (char) farge);
+        String farge = JOptionPane.showInputDialog("Haren's farge (hvit/brun): ");
+        char farge_formatert = farge.charAt(0);
+        kontroll.registrerGjenfangstHare(id, dato, sted, lengde, vekt, farge_formatert);
     }
 
     public void finnDyr() {
@@ -118,7 +125,10 @@ public class GUI {
             Dyr Dyret = Dyrene.get(i);
             tekst += Dyret.toString();
             tekst += "\n";
+            tekst += "------------------------";
+            tekst += "\n";
         }
+        System.out.println(tekst);
         JOptionPane.showMessageDialog(null, tekst);
     }
 
@@ -129,10 +139,16 @@ public class GUI {
             Dyr Dyret = Dyrene.get(i);
             tekst += Dyret.toString();
             tekst += "\n";
+            tekst += "------------------------";
+            tekst += "\n";
             for(Gjenfangst g : Dyret.listeGjenfangst) {
                 tekst += g.toString();
+                tekst += "\n";
+                tekst += "------------------------";
+                tekst += "\n";
             }
         }
+        System.out.println(tekst);
         JOptionPane.showMessageDialog(null, tekst);
     }
 }
