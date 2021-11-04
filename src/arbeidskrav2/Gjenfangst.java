@@ -7,14 +7,11 @@ public class Gjenfangst {
     private double vekten;
     double lengdeOre;
 
-    public Gjenfangst(String dato, String sted, double lengde, double vekt, double farge) {
+    public Gjenfangst(String dato, String sted, double lengde, double vekt) {
         datoen = dato;
         stedet = sted;
         lengden = lengde;
         vekten = vekt;
-    }
-
-    public Gjenfangst(String dato, String sted, double lengde, double vekt) {
     }
 
     public String hentDato() {
@@ -37,6 +34,6 @@ public class Gjenfangst {
         return "Dato for gjenfangst: " + datoen + "\n" +
                 "Sted: " + stedet + "\n" +
                 "Lengde: " + lengden + "\n" +
-                "Vekt: " + vekten;
+                "Vekt: " + vekten + "\n";
     }
 }
