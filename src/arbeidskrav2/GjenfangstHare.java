@@ -8,7 +8,7 @@ public class GjenfangstHare extends Gjenfangst {
         fargen = farge;
     }
     public String toString() {
-        return super.toString() + "\t" + "Fargen:" + fargen;
+        return super.toString()  + "Fargen:" + fargen;
     }
 
 }
