@@ -17,11 +17,11 @@ public class Kontroll {
         listeDyr.add(nyGaupe);
     }
 
-    public void registrerHare(String kjonn, double lengde, double vekt, String sted, String dato, char type_formatert, String farge) {
+    public void registrerHare(String kjonn, double lengde, double vekt, String sted, String dato, char type_formatert, char farge_formatert) {
         antallHarer++;
         String id = "H" + antallHarer;
         id.trim(); // Fjerner mellomrom mellom string og int
-        Hare nyHare = new Hare(id, kjonn, lengde, vekt, sted, dato, type_formatert, farge);
+        Hare nyHare = new Hare(id, kjonn, lengde, vekt, sted, dato, type_formatert, farge_formatert);
         listeDyr.add(nyHare);
     }
 
@@ -59,7 +59,7 @@ public class Kontroll {
         }
     }
 
-    public void registrerGjennfangstHare(String id, String dato, String sted, double lengde, double vekt, char farge) {
+    public void registrerGjenfangstHare(String id, String dato, String sted, double lengde, double vekt, char farge) {
         Hare haren = (Hare)finnDyr(id);
         if (haren != null) {
             GjenfangstHare Gjenfangst = new GjenfangstHare(dato, sted, lengde, vekt, farge);
