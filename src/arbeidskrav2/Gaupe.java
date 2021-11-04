@@ -10,7 +10,7 @@ public class Gaupe extends Dyr {
 
     @Override
     public String toString() {
-        return super.toString() + "\t" + lengdeOre;
+        return super.toString() + "Lengde øre: " + lengdeOre;
     }
 
     public double getLengdeOre() {
