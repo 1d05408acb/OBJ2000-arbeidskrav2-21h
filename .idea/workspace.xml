@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14aa7d87-1018-48a6-a1dd-f6c9cbe501fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstGaupe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arbeidskrav2/Hare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Hare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Hare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
