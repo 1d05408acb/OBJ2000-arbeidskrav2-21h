@@ -67,7 +67,7 @@ public class Dyr {
                 "Lengde: " + lengden + "cm" + "\n" +
                 "Vekt: " + vekten + "kg" + "\n" +
                 "Fangested: " + stedet + "\n" +
-                "Dato: " + datoen;
+                "Dato: " + datoen + "\n";
     }
 }
 
