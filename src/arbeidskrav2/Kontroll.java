@@ -1,10 +1,11 @@
 package arbeidskrav2;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Kontroll {
     // Opprette en array liste
-    ArrayList<Dyr> listeDyr = new ArrayList<Dyr>();
+    ArrayList<Dyr> listeDyr = new ArrayList<>();
     // Opprette variabler for å kunne telle
     private int antallGauper = 0;
     private int antallHarer = 0;
@@ -12,7 +13,6 @@ public class Kontroll {
     public void registrerGaupe(String kjonn, double lengde, double vekt, String sted, String dato, double lengdeOre){
         antallGauper++; // Hver gang det loopes igjennom så legges til ett tall til variabelen
         String id = "G" + antallGauper;
-        id.trim(); // Fjerner mellomrom mellom string og int
         Gaupe nyGaupe = new Gaupe(id, kjonn, lengde, vekt, sted, dato, lengdeOre);
         listeDyr.add(nyGaupe);
     }
@@ -20,13 +20,8 @@ public class Kontroll {
     public void registrerHare(String kjonn, double lengde, double vekt, String sted, String dato, char type_formatert, char farge_formatert) {
         antallHarer++;
         String id = "H" + antallHarer;
-        id.trim(); // Fjerner mellomrom mellom string og int
         Hare nyHare = new Hare(id, kjonn, lengde, vekt, sted, dato, type_formatert, farge_formatert);
         listeDyr.add(nyHare);
-    }
-
-    public void registrerDyr(Dyr dyr) {
-        listeDyr.add(dyr);
     }
 
     public Dyr finnDyr(String id) {
@@ -44,18 +39,13 @@ public class Kontroll {
         return dyr;
     }
 
-    public void registrerGjenfangst(GjenfangstGaupe Gjenfangst, String id) {
-        Dyr dyret = finnDyr(id);
-        if(dyret != null) {
-            dyret.registrerGjenfangst(Gjenfangst);
-        }
-    }
-
     public void registrerGjenfangstGaupe(String id, String dato, String sted, double lengde, double vekt, double lengdeOre) {
         Gaupe gaupen = (Gaupe)finnDyr(id);
         if (gaupen != null) {
             GjenfangstGaupe Gjenfangst = new GjenfangstGaupe(dato, sted, lengde, vekt, lengdeOre);
             gaupen.registrerGjenfangst(Gjenfangst);
+        } else {
+            JOptionPane.showMessageDialog(null, "Det er ingen gaupe registrert med den ID'en");
         }
     }
 
@@ -64,6 +54,8 @@ public class Kontroll {
         if (haren != null) {
             GjenfangstHare Gjenfangst = new GjenfangstHare(dato, sted, lengde, vekt, farge);
             haren.registrerGjenfangst(Gjenfangst);
+        } else {
+            JOptionPane.showMessageDialog(null, "Det er ingen hare registrert med den ID'en");
         }
     }
 
