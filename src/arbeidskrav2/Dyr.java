@@ -1,17 +1,15 @@
 package arbeidskrav2;
 
-import java.text.Collator;
 import java.util.ArrayList;
 
 public class Dyr {
-    private String idn;
-    private String kjonnet;
-    private double lengden;
-    private double vekten;
-    private String stedet;
-    private String datoen;
-    public ArrayList<Gjenfangst> listeGjenfangst = new ArrayList<Gjenfangst>();
-    private final static Collator Kollator = Collator.getInstance();
+    private final String idn;
+    private final String kjonnet;
+    private final double lengden;
+    private final double vekten;
+    private final String stedet;
+    private final String datoen;
+    public ArrayList<Gjenfangst> listeGjenfangst = new ArrayList<>();
 
     public Dyr(String id, String kjonn, double lengde, double vekt, String sted, String dato) {
         idn = id;
@@ -22,43 +20,12 @@ public class Dyr {
         datoen = dato;
     }
 
-    public int compareTo(Dyr dyr) {
-        return Kollator.compare(this.idn, dyr.idn);
-    }
-
-    public boolean equals(Dyr dyr) {
-        return Kollator.equals(this.idn, dyr.idn);
-    }
-
-    public ArrayList<Gjenfangst> hentFangst() {
-        return listeGjenfangst;
-    }
-
     public String hentId() {
         return idn;
     }
 
-    public double hentLengde() {
-        return lengden;
-    }
-    public double hentVekt() {
-        return vekten;
-    }
-
-    public String hentSted() {
-        return stedet;
-    }
-
-    public String hentDato() {
-        return datoen;
-    }
-
     public void registrerGjenfangst(Gjenfangst g) {
         listeGjenfangst.add(g);
-    }
-
-    public ArrayList<Gjenfangst> getGjenfangst() {
-        return listeGjenfangst;
     }
 
     public String toString() {
