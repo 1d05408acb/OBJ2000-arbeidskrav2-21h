@@ -10,9 +10,10 @@
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstGaupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstGaupe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Hare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Hare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Gamle filer/Obligatorisk oppgave del 2 høsten 2019/Obligatorisk oppgave del 2 høsten 2019" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Moduler/Uke 8/Demo assosiasjon" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="ReaderModeSettings">
@@ -142,5 +143,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/arbeidskrav2/Main.java</url>
+          <line>3</line>
+          <properties class="arbeidskrav2.Main" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
