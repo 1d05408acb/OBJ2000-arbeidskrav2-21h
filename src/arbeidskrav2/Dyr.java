@@ -2,14 +2,14 @@ package arbeidskrav2;
 
 import java.util.ArrayList;
 
-public class Dyr {
+public class Dyr implements Comparable<Dyr> {
+    public static ArrayList<Gjenfangst> listeGjenfangst = new ArrayList<>();
     private final String idn;
     private final String kjonnet;
     private final double lengden;
     private final double vekten;
     private final String stedet;
     private final String datoen;
-    public ArrayList<Gjenfangst> listeGjenfangst = new ArrayList<>();
 
     public Dyr(String id, String kjonn, double lengde, double vekt, String sted, String dato) {
         idn = id;
@@ -20,14 +20,12 @@ public class Dyr {
         datoen = dato;
     }
 
-    public String hentId() {
-        return idn;
-    }
-
+    // Legger til i gjenfangst arrayen
     public void registrerGjenfangst(Gjenfangst g) {
         listeGjenfangst.add(g);
     }
 
+    // LAger to string for formatert utskrift
     public String toString() {
         return "ID: " + idn + "\n" +
                 "Kjønn: " + kjonnet + "\n" +
@@ -36,6 +34,12 @@ public class Dyr {
                 "Fangested: " + stedet + "\n" +
                 "Dato: " + datoen + "\n";
     }
+
+    @Override
+    public int compareTo(Dyr dyr) {
+        return this.idn.compareTo(dyr.idn);
+    }
 }
+
 
 
