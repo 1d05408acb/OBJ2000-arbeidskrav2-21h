@@ -1,11 +1,10 @@
 package arbeidskrav2;
 
 public class Gjenfangst {
-    private String datoen;
-    private String stedet;
-    private double lengden;
-    private double vekten;
-    double lengdeOre;
+    private final String datoen;
+    private final String stedet;
+    private final double lengden;
+    private final double vekten;
 
     public Gjenfangst(String dato, String sted, double lengde, double vekt) {
         datoen = dato;
@@ -14,26 +13,10 @@ public class Gjenfangst {
         vekten = vekt;
     }
 
-    public String hentDato() {
-        return datoen;
-    }
-
-    public String hentSted() {
-        return stedet;
-    }
-
-    public double hentLengde() {
-        return lengden;
-    }
-
-    public double hentVekt() {
-        return vekten;
-    }
-
     public String toString() {
         return "Dato for gjenfangst: " + datoen + "\n" +
                 "Sted: " + stedet + "\n" +
                 "Lengde: " + lengden + "\n" +
-                "Vekt: " + vekten + "\n";
+                "Vekt: " + vekten;
     }
 }
