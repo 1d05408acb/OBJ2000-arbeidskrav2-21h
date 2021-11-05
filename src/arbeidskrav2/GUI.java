@@ -35,30 +35,15 @@ public class GUI {
         boolean fortsette = true;
         while(fortsette) {
             int valg = valgt();
-            switch(valg) {
-                case 0:
-                    registrerGaupe();
-                    break;
-                case 1:
-                    registrerHare();
-                    break;
-                case 2:
-                    registrerGjennfangstGaupe();
-                    break;
-                case 3:
-                    registrerGjennfangstHare();
-                    break;
-                case 4:
-                    finnDyr();
-                    break;
-                case 5:
-                    listDyr();
-                    break;
-                case 6:
-                    listDyrMedGjenfangst();
-                    break;
-                default:
-                    fortsette = false;
+            switch (valg) {
+                case 0 -> registrerGaupe();
+                case 1 -> registrerHare();
+                case 2 -> registrerGjennfangstGaupe();
+                case 3 -> registrerGjennfangstHare();
+                case 4 -> finnDyr();
+                case 5 -> listDyr();
+                case 6 -> listDyrMedGjenfangst();
+                default -> fortsette = false;
             }
         }
     }
@@ -115,40 +100,36 @@ public class GUI {
             JOptionPane.showMessageDialog(null, Dyret.toString());
         } else {
             JOptionPane.showMessageDialog(null, "Fant ikke dyret");
-            }
+        }
     }
 
     public void listDyr() {
         ArrayList<Dyr> Dyrene = kontroll.getDyr();
-        String tekst = "";
-        for(int i = 0; i < Dyrene.size(); i++) {
-            Dyr Dyret = Dyrene.get(i);
-            tekst += Dyret.toString();
-            tekst += "\n";
-            tekst += "------------------------";
-            tekst += "\n";
+        StringBuilder tekst = new StringBuilder();
+        for (Dyr Dyret : Dyrene) {
+            tekst.append(Dyret.toString());
+            tekst.append("\n");
+            tekst.append("------------------------");
+            tekst.append("\n");
         }
-        System.out.println(tekst);
-        JOptionPane.showMessageDialog(null, tekst);
+        JOptionPane.showMessageDialog(null, tekst.toString());
     }
 
     public void listDyrMedGjenfangst() {
         ArrayList<Dyr> Dyrene = kontroll.getDyr();
-        String tekst = "";
-        for(int i = 0; i < Dyrene.size(); i++) {
-            Dyr Dyret = Dyrene.get(i);
-            tekst += Dyret.toString();
-            tekst += "\n";
-            tekst += "------------------------";
-            tekst += "\n";
-            for(Gjenfangst g : Dyret.listeGjenfangst) {
-                tekst += g.toString();
-                tekst += "\n";
-                tekst += "------------------------";
-                tekst += "\n";
+        StringBuilder tekst = new StringBuilder();
+        for (Dyr Dyret : Dyrene) {
+            tekst.append(Dyret.toString());
+            tekst.append("\n");
+            tekst.append("------------------------");
+            tekst.append("\n");
+            for (Gjenfangst g : Dyret.listeGjenfangst) {
+                tekst.append(g.toString());
+                tekst.append("\n");
+                tekst.append("------------------------");
+                tekst.append("\n");
             }
         }
-        System.out.println(tekst);
-        JOptionPane.showMessageDialog(null, tekst);
+        JOptionPane.showMessageDialog(null, tekst.toString());
     }
 }
