@@ -12,8 +12,4 @@ public class Gaupe extends Dyr {
     public String toString() {
         return super.toString() + "Lengde øre: " + lengdeOre;
     }
-
-    public double getLengdeOre() {
-        return lengdeOre;
-    }
 }
