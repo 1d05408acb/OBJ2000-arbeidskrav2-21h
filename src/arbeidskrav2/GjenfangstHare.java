@@ -1,7 +1,7 @@
 package arbeidskrav2;
 
 public class GjenfangstHare extends Gjenfangst {
-    private char fargen;
+    private final char fargen;
 
     public GjenfangstHare(String dato, String sted, double lengde, double vekt, char farge) {
         super(dato, sted, lengde, vekt);
