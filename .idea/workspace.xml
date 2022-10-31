@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14aa7d87-1018-48a6-a1dd-f6c9cbe501fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Dyr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gaupe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Gjenfangst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstGaupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstGaupe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/GjenfangstHare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Kontroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arbeidskrav2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/arbeidskrav2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preview7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +30,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/../../../../../../../../Program Files/Eclipse Foundation/jdk-16.0.2.7-hotspot/lib/src.zip!/java.base/java/lang/Object.java" root0="FORCE_HIGHLIGHTING" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="20HhrQXTxIYYCVrS0EDbU0A8x7Z" />
   <component name="ProjectLevelVcsManager">
@@ -97,10 +97,14 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Moduler/Uke 8/Demo assosiasjon" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/admin/Documents/GitHub/OBJ2000-arbeidskrav2-21h"
+  }
+}]]></component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
@@ -142,7 +146,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
